@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dribbble Tailwind Recreation</title>
+
+  <!-- Tailwind CDN for class project -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <main class="bg-white min-h-screen p-6 md:p-10">
+
+    <!-- Top navigation -->
+    <nav class="flex flex-wrap items-center gap-4 mb-10">
+      <button class="border border-gray-300 rounded-full px-6 py-3 font-semibold bg-white shadow-sm">
+        Popular ˅
+      </button>
+
+      <a href="#" class="bg-gray-100 rounded-full px-6 py-3 font-bold">Discover</a>
+      <a href="#" class="px-3 py-3 font-bold">Animation</a>
+      <a href="#" class="px-3 py-3 font-bold">Branding</a>
+      <a href="#" class="px-3 py-3 font-bold">Illustration</a>
+      <a href="#" class="px-3 py-3 font-bold">Mobile</a>
+      <a href="#" class="px-3 py-3 font-bold">Print</a>
+      <a href="#" class="px-3 py-3 font-bold text-2xl">›</a>
+
+      <button class="border border-gray-300 rounded-full px-6 py-3 font-semibold ml-auto">
+        ☰ Filters
+      </button>
+    </nav>
+
+    <!-- Card grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Card 1 -->
+      <article>
+        <div class="h-64 bg-[#f4ecdf] rounded-xl overflow-hidden">
+          <img 
+            class="w-full h-full object-cover"
+            src="https://placehold.co/500x350/f4ecdf/222?text=Finance+Icons" 
+            alt="Finance icon design">
+        </div>
+
+        <div class="flex justify-between items-center mt-3 text-sm md:text-base">
+          <p>
+            <span class="text-red-600 font-bold mr-2">sm</span>
+            <strong>Siege Media</strong>
+            <span class="bg-gray-300 text-white text-xs rounded px-2 py-1">TEAM</span>
+          </p>
+          <p class="text-gray-500 font-semibold">♥ 193 &nbsp; 👁 67.4k</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article>
+        <div class="h-64 bg-black rounded-xl overflow-hidden">
+          <img 
+            class="w-full h-full object-cover"
+            src="https://placehold.co/500x350/000000/ffffff?text=Icon+Grid" 
+            alt="Icon grid design">
+        </div>
+
+        <div class="flex justify-between items-center mt-3 text-sm md:text-base">
+          <p class="flex items-center gap-2">
+            <span class="w-7 h-7 bg-yellow-400 rounded-full inline-block"></span>
+            <strong>Orman Clark</strong>
+            <span class="bg-gray-300 text-white text-xs rounded px-2 py-1">PRO</span>
+          </p>
+          <p class="text-gray-500 font-semibold">♥ 98 &nbsp; 👁 24.2k</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article>
+        <div class="h-64 bg-gray-50 rounded-xl flex items-center justify-center">
+          <div class="grid grid-cols-5 gap-5 text-3xl text-slate-600">
+            <span>⚙</span><span>▦</span><span>⌘</span><span>▣</span><span>☼</span>
+            <span>☁</span><span>⌑</span><span>♙</span><span>▤</span><span>◉</span>
+            <span>▣</span><span>☷</span><span>▥</span><span>☵</span><span>▧</span>
+            <span>△</span><span>▣</span><span>▤</span><span>⌖</span><span>◍</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-3 text-sm md:text-base">
+          <p class="flex items-center gap-2">
+            <span class="w-7 h-7 bg-indigo-500 rounded-full inline-block"></span>
+            <strong>Jordon Cheung</strong>
+          </p>
+          <p class="text-gray-500 font-semibold">♥ 176 &nbsp; 👁 57.1k</p>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article>
+        <div class="h-64 bg-[#f6eee2] rounded-xl overflow-hidden">
+          <img 
+            class="w-full h-full object-cover"
+            src="https://placehold.co/500x350/f6eee2/2820a8?text=Blue+Icons" 
+            alt="Blue icon design">
+        </div>
+
+        <div class="flex justify-between items-center mt-3 text-sm md:text-base">
+          <p class="flex items-center gap-2">
+            <span class="w-7 h-7 bg-red-700 rounded-full inline-block"></span>
+            <strong>Aldo Crusher</strong>
+            <span class="bg-gray-300 text-white text-xs rounded px-2 py-1">PRO</span>
+          </p>
+          <p class="text-gray-500 font-semibold">♥ 65 &nbsp; 👁 6.7k</p>
+        </div>
+      </article>
+
+      <!-- Card 5 / Ad -->
+      <article>
+        <div class="h-64 bg-orange-500 rounded-xl relative">
+          <span class="absolute top-4 right-4 bg-white rounded-md px-2 py-1 text-2xl">↗</span>
+        </div>
+
+        <div class="flex justify-between items-center mt-3 text-sm md:text-base">
+          <p>
+            <span class="bg-orange-500 text-white font-bold rounded px-2 py-1 mr-2">C</span>
+            <strong>Canto</strong>
+          </p>
+          <p class="text-gray-500 font-semibold">Hide ads • Advertise</p>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article>
+        <div class="h-64 bg-[#eeeedf] rounded-xl relative overflow-hidden">
+          <div class="absolute top-10 left-10 text-5xl">✍ ☎ ☺</div>
+          <div class="absolute bottom-20 left-12 text-5xl">▰ ☘ ▤</div>
+
+          <h2 class="absolute bottom-10 left-6 text-white text-2xl font-bold">
+            Icons / mini illustr...
+          </h2>
+
+          <div class="absolute bottom-6 right-6 flex gap-3">
+            <button class="w-14 h-14 bg-white rounded-full text-2xl shadow">♡</button>
+            <button class="w-14 h-14 bg-white rounded-full text-2xl shadow">♥</button>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-3 text-sm md:text-base">
+          <p class="flex items-center gap-2">
+            <span class="w-7 h-7 bg-cyan-500 rounded-full inline-block"></span>
+            <strong>Ramy Wafaa</strong>
+            <span class="bg-gray-300 text-white text-xs rounded px-2 py-1">PRO</span>
+          </p>
+          <p class="text-gray-500 font-semibold">♥ 513 &nbsp; 👁 143k</p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Back to top button -->
+    <button class="fixed right-6 bottom-6 w-14 h-14 rounded-full bg-gray-400 text-white text-3xl">
+      ⌃
+    </button>
+
+  </main>
+
+</body>
+</html>
